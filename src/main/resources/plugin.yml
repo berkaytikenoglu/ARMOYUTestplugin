@@ -1,0 +1,13 @@
+name: ARMOYUTestplugin
+version: '${project.version}'
+main: armoyutestplugin.armoyutestplugin.ARMOYUTestplugin
+api-version: 1.19
+prefix: ARMOYU TEST
+authors: [ ARMOYU ]
+description: ARMOYU Test pluginidir
+website: https://aramizdakioyuncu.com
+commands:
+  test:
+    description: Test komutu.
+    usage: /<command>
+    aliases: [test,deneme]
