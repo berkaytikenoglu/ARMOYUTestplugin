@@ -1,5 +1,6 @@
 package armoyutestplugin.armoyutestplugin;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -11,8 +12,7 @@ public class Olaylar extends Komutlar implements Listener {
     @EventHandler
     public void hareketetme(PlayerMoveEvent e) {
         Player player = e.getPlayer();
-        player.sendMessage("Harekete edemezsin dayii");
-//        File yourFile = new File(Test.getPlugin().getDataFolder().getAbsolutePath() + "/oyuncular.json");
+        player.sendMessage(ChatColor.RED + "Hareket Edemezsin!");
         e.setCancelled(true);
     }
 }
